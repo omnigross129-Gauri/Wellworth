@@ -343,6 +343,7 @@ p {
     height: auto;
     border-radius: 16px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    aspect-ratio: 3 / 2;   /* matches 1368×912 */
 }
 
 
@@ -639,8 +640,8 @@ p {
     color: var(--neutral-dark);
 }
 
-/* Service Cards */
-.service-card {
+/* Services Cards */
+.Services-card {
     background-color: white;
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -649,12 +650,12 @@ p {
     transition: transform 0.2s;
 }
 
-.service-card:hover {
+.Services-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 
-.service-icon {
+.Services-icon {
     width: 48px;
     height: 48px;
     background-color: rgba(26, 86, 219, 0.1);
@@ -667,7 +668,7 @@ p {
     font-size: 1.25rem;
 }
 
-.service-kpi {
+.Services-kpi {
     display: inline-block;
     padding: var(--spacing-xs) var(--spacing-md);
     background-color: var(--neutral-light);
@@ -2106,7 +2107,7 @@ p {
         grid-template-columns: 1fr;
     }
 }
-.service-card {
+.Services-card {
     
     border-radius: 18px;
     padding: 16px;
@@ -2116,7 +2117,7 @@ p {
 }
 
 /* Image container */
-.service-image {
+.Services-image {
     width: 100%;
     height: px;
     border-radius: 14px;
@@ -2126,7 +2127,7 @@ p {
 }
 
 /* Image itself */
-.service-image img {
+.Services-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2135,12 +2136,12 @@ p {
 }
 
 /* Hover zoom effect */
-.service-card:hover .service-image img {
+.Services-card:hover .Services-image img {
     transform: scale(1.06);
 }
 
 /* Icon style */
-.service-icon {
+.Services-icon {
     font-size: 28px;
    
     margin-bottom: 10px;
@@ -3391,7 +3392,7 @@ p {
 
 
 /* ===============================
-   WF SOFT FM SERVICES THEME
+   WF SOFT FM Services THEME
    =============================== */
 
 .softfm-theme {
@@ -3423,10 +3424,10 @@ p {
 }
 
 /* ===============================
-   SERVICE CARD – PREMIUM
+   Services CARD – PREMIUM
    =============================== */
 
-.softfm-theme .service-card {
+.softfm-theme .Services-card {
     position: relative;
     border-radius: 22px;
     padding: 18px;
@@ -3438,7 +3439,7 @@ p {
 }
 
 /* Top accent */
-.softfm-theme .service-card::before {
+.softfm-theme .Services-card::before {
     content: '';
     position: absolute;
     inset: 0 0 auto 0;
@@ -3451,30 +3452,30 @@ p {
 }
 
 /* Hover */
-.softfm-theme .service-card:hover {
+.softfm-theme .Services-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 35px 80px rgba(15, 23, 42, 0.25);
 }
 
 /* ===============================
-   SERVICE IMAGE
+   Services IMAGE
    =============================== */
 
-.softfm-theme .service-image {
+.softfm-theme .Services-image {
     height: 180px;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;
 }
 
-.softfm-theme .service-image img {
+.softfm-theme .Services-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.softfm-theme .service-card:hover .service-image img {
+.softfm-theme .Services-card:hover .Services-image img {
     transform: scale(1.06);
 }
 
@@ -3482,7 +3483,7 @@ p {
    ICON
    =============================== */
 
-.softfm-theme .service-icon {
+.softfm-theme .Services-icon {
     width: 54px;
     height: 54px;
     border-radius: 14px;
@@ -3497,7 +3498,7 @@ p {
     margin-bottom: 14px;
 }
 
-.softfm-theme .service-icon i {
+.softfm-theme .Services-icon i {
     font-size: 1.3rem;
     color: var(--primary-blue);
 }
@@ -3506,14 +3507,14 @@ p {
    TEXT
    =============================== */
 
-.softfm-theme .service-card h4 {
+.softfm-theme .Services-card h4 {
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 8px;
     color: var(--secondary-navy);
 }
 
-.softfm-theme .service-card p {
+.softfm-theme .Services-card p {
     font-size: 0.9rem;
     line-height: 1.6;
     color: var(--neutral-dark);
@@ -3524,7 +3525,7 @@ p {
    KPI BADGE
    =============================== */
 
-.softfm-theme .service-kpi {
+.softfm-theme .Services-kpi {
     display: inline-block;
     padding: 6px 14px;
     font-size: 0.75rem;
@@ -3813,6 +3814,7 @@ p {
     border-radius: 22px;   
     box-shadow: 
         0 30px 70px rgba(15, 23, 42, 0.35);
+    aspect-ratio: 3 / 2;   /* matches 1368×912 */
 }
 @media (max-width: 768px) {
     .hero-dashboard-img {
@@ -3927,8 +3929,8 @@ p {
     line-height: 1.6;
 }
 
-/* SERVICES HERO CENTER ALIGN */
-.service-hero-center {
+/* Services HERO CENTER ALIGN */
+.Services-hero-center {
     text-align: center;
 }
 
@@ -4666,10 +4668,10 @@ p {
 }
 
 /* ===============================
-   MANPOWER SERVICES 
+   MANPOWER Services 
 ================================ */
 
-.manpower-services-theme {
+.manpower-Services-theme {
   background: #f6f9fc;
 }
 
@@ -4771,7 +4773,7 @@ p {
 
 
 /* ===============================
-   SERVICE FEATURES
+   Services FEATURES
 ================================ */
 
 .svc-features {
@@ -4896,13 +4898,13 @@ p {
 }
 
 /* Reuse existing styles */
-.service-points {
+.Services-points {
   list-style: none;
   padding: 0;
   margin-top: 24px;
 }
 
-.service-points li {
+.Services-points li {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -4911,7 +4913,7 @@ p {
   color: #222;
 }
 
-.service-points i {
+.Services-points i {
   color:#005fd6;
   font-size: 18px;
 }
@@ -4928,6 +4930,7 @@ p {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
+  aspect-ratio: 3 / 2;   /* matches 1368×912 */
 }
 
 .mw-video-frame img {
@@ -5375,7 +5378,7 @@ p {
 }
 
 /* ===============================
-   SERVICE PROCESS
+   Services PROCESS
 ================================ */
 
 .svc-process {
@@ -6007,7 +6010,7 @@ p {
   }
 }
 /* ===============================
-   SERVICE PROCESS – MOBILE ONLY FIX
+   Services PROCESS – MOBILE ONLY FIX
 ================================ */
 @media (max-width: 576px) {
 
@@ -6048,7 +6051,7 @@ p {
   }
 }
 /* ===============================
-   SERVICE PROCESS – MOBILE ONLY
+   Services PROCESS – MOBILE ONLY
 ================================ */
 @media (max-width: 576px) {
 
@@ -6228,7 +6231,7 @@ p {
 }
 
 /* ===============================
-   SERVICE HERO – BACKGROUND IMAGE
+   Services HERO – BACKGROUND IMAGE
 ================================ */
 .svc-hero {
   position: relative;
@@ -6773,11 +6776,11 @@ p {
 }
 
 
-.service-link {
+.Services-link {
   cursor: pointer;
 }
 
-.service-link {
+.Services-link {
     background-color: white;
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -6786,13 +6789,13 @@ p {
     transition: transform 0.2s;
 }
 
-.service-link:hover {
+.Services-link:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 
 /* Top accent */
-.softfm-theme .service-link::before {
+.softfm-theme .Services-link::before {
     content: '';
     position: absolute;
     inset: 0 0 auto 0;
@@ -6804,7 +6807,7 @@ p {
     );
 }
 
-.softfm-theme .service-link {
+.softfm-theme .Services-link {
     position: relative;
     border-radius: 22px;
     padding: 18px;
@@ -6815,8 +6818,8 @@ p {
     height: 100%;
 }
 
-/* Service card base (if not already styled) */
-.service-link {
+/* Services card base (if not already styled) */
+.Services-link {
  position: relative;
     border-radius: 22px;
     padding: 18px;
@@ -6828,7 +6831,7 @@ p {
 }
 
 /* 🔵🟠 Gradient TOP BORDER */
-.service-link::before {
+.Services-link::before {
   content: '';
     position: absolute;
     inset: 0 0 auto 0;
@@ -6857,7 +6860,7 @@ p {
 
 .cert-logo-card {
   background: #111827;
-  border: 1px dashed rgba(255, 255, 255, 0.18);
+  
   border-radius: 12px;
   height: 70px;
 
@@ -6867,10 +6870,19 @@ p {
 }
 
 .cert-logo-card img {
-  max-height: 40px;
+  max-height: 50px;
   max-width: 85%;
   object-fit: contain;
+  border-radius: 10px;
+
+  border: 4px solid transparent;   /* needed for gradient border */
+  background: 
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #2563eb 0%, #f97316 100%) border-box;
 }
+
+
+
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -7314,6 +7326,14 @@ p {
     opacity: 1;
   }
 }
+
+.cta-text {
+    color: #ffffff;
+}
+
+
+
+
 
 
 
