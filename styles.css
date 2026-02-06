@@ -2576,7 +2576,7 @@ p {
 }
 
 .hero-title {
-    font-size: 3.3rem;
+    font-size: 2.3rem;
     font-weight: 800;
     letter-spacing: -0.025em;
     color: var(--secondary-navy);
@@ -7331,6 +7331,126 @@ p {
     color: #ffffff;
 }
 
+/* ================================
+   CERTIFICATION CARDS (KEEP HTML)
+================================ */
+
+.cert-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid rgba(13, 45, 120, 0.08);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(13, 45, 120, 0.15);
+}
+
+/* ================================
+   IMAGE FIX (IMPORTANT PART)
+================================ */
+
+.cert-image {
+  background:  linear-gradient(
+    90deg,
+    #2f6bff 0%,
+    #6a5cff 45%,
+    #ff7a18 100%
+  );;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Uniform image area */
+.cert-image img {
+  width: 100%;
+  height: 220px;              /* KEY: fixed height */
+  object-fit: contain;       /* prevents crop */
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;             /* space for tall certs */
+}
+
+/* ================================
+   TEXT (UNCHANGED, CLEAN)
+================================ */
+
+.cert-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0b1c39;
+  margin-bottom: 8px;
+}
+
+.cert-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.cert-card .award-year {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 500px;
+  background: rgba(13, 71, 161, 0.08);
+  color: #0d47a1;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .awards-grid .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 24px;
+  }
+
+  .cert-image img {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .awards-grid .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .cert-card {
+    padding: 16px;
+  }
+
+  .cert-image img {
+    height: 180px;
+  }
+}
+
+/* Touch devices – remove hover jump */
+@media (hover: none) {
+  .cert-card:hover {
+    transform: none;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+  }
+}
 
 
 
