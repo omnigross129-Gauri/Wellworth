@@ -7452,7 +7452,18 @@ p {
   }
 }
 
+/* 🔥 SERVER-SAFE FLEX FIX (REQUIRED) */
+.awards-grid .col-3 {
+  min-width: 0;
+}
 
+.cert-card {
+  min-width: 0;
+}
+
+.cert-image {
+  min-width: 0;
+}
 
 
 
